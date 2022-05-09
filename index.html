@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="icon"
+      href="assets/images/favicon.png"
+      type="image/gif"
+      sizes="16x16"
+    />
+    <!--Bootstrap CDN Link-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!--Googe Fonts Link-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Main Stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/menu.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <!-- font-family cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Island+Moments&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne+Tactile&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- style for slider start -->
+    <style>
+      * {box-sizing: border-box}
+      body {font-family: Verdana, sans-serif; margin:0}
+      .mySlides {display: none}
+      img {vertical-align: middle;}
+
+      /* The dots/bullets/indicators */
+      .dot {
+           filter: grayscale(100%);
+      }
+      
+      .active{  
+        filter: grayscale(0%);
+        z-index: 343;
+       position: relative;
+
+      }
+      .active::before{
+        content: "";
+        background-color: red;
+       
+        position: absolute;
+        margin-left: 550px;
+        width: 100px;
+        height: 10px;
+      }
+      
+      /* Fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+      }
+      </style>
+
+      <!-- style for slider end -->
+
+  </head>
+
+  <body>
+    <!--========Start Header Area=========-->
+    <header class="main_header_area">
+      <div class="container-fluid">
+        <div class="row">
+          <!--start logo section-->
+          <div class="logo">
+            <a href="#">
+              <img src="assets/images/logo.svg" alt="logo" />
+            </a>
+          </div>
+          <!--/// end logo section-->
+          <!--start menu section-->
+          <div class="menu_area">
+            <!--Start Top Contact Section-->
+            <div class="top_contact_section">
+              <div class="phone_mail_area">
+                <ul>
+                  <li>
+                    <a href="tel:000000"
+                      ><img src="assets/images/phone.svg" alt="icon" />
+                      <p>00000000</p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="mailto:"
+                      ><img src="assets/images/email.svg" alt="icon" />
+                      <p>INFO@AIR-ON.NET</p></a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="social_media">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><img src="assets/images/instagram.svg" alt="icon"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--/// End Top Contact Section-->
+            <!--Start Menu Section-->
+            <nav class="menu">
+              <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">Ventilatie</a></li>
+                <li><a href="#">CONTACT</a></li>
+              </ul>
+            </nav>
+            <!--/// End Menu Section-->
+          </div>
+          <!--/// end menu section-->
+        </div>
+      </div>
+    </header>
+    <!--========End Header Area=========-->
+
+    <!-- review section start -->
+
+   <div class="main_updated_onvantgeen">
+     
+
+    
+    <div class="up_img">
+      <img src="assets/images/pexels-photo-5605061.png" alt="">
+      </div>
+
+      <div class="undated_onvantgeen">
+        <h1> UPDATES ONTVANGEN? MELD JE AAN! </h1>
+      <input type="text" name="text" placeholder="E-MAIL">
+      <button>AANMELDEN</button>
+      </div>
+   
+   </div>
+
+
+
+
+    <div class="slider_Section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="slider">
+              <div class="slider">
+                <div
+                  id="carouselExampleControls"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                  id="carousel-example-generic"
+                  class="carousel slide"
+                  data-bs-interval="false"
+                  data-ride="carousel"
+                  data-pause="hover"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="slider_head">
+                        <p>REVIEWS</p>
+                        <h1>Klantervaringen</h1>
+                        <span class="underLine"></span>
+                      </div>
+                      <div class="man_details">
+                        <b>Bedrijfnaam</b>
+                        <h3>WILLEN JAN</h3>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="13.155"
+                          height="12.591"
+                          viewBox="0 0 13.155 12.591"
+                        >
+                          <path
+                            id="Icon_awesome-star"
+                            data-name="Icon awesome-star"
+                            d="M7.313.437,5.708,3.693l-3.592.524A.787.787,0,0,0,1.68,5.559l2.6,2.533-.615,3.578a.786.786,0,0,0,1.141.829l3.214-1.689L11.233,12.5a.787.787,0,0,0,1.141-.829l-.615-3.578,2.6-2.533a.787.787,0,0,0-.435-1.343L10.33,3.693,8.725.437a.788.788,0,0,0-1.411,0Z"
+                            transform="translate(-1.441 0.001)"
+                            fill="#f4c521"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="13.155"
+                          height="12.591"
+                          viewBox="0 0 13.155 12.591"
+                        >
+                          <path
+                            id="Icon_awesome-star"
+                            data-name="Icon awesome-star"
+                            d="M7.313.437,5.708,3.693l-3.592.524A.787.787,0,0,0,1.68,5.559l2.6,2.533-.615,3.578a.786.786,0,0,0,1.141.829l3.214-1.689L11.233,12.5a.787.787,0,0,0,1.141-.829l-.615-3.578,2.6-2.533a.787.787,0,0,0-.435-1.343L10.33,3.693,8.725.437a.788.788,0,0,0-1.411,0Z"
+                            transform="translate(-1.441 0.001)"
+                            fill="#f4c521"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="13.155"
+                          height="12.591"
+                          viewBox="0 0 13.155 12.591"
+                        >
+                          <path
+                            id="Icon_awesome-star"
+                            data-name="Icon awesome-star"
+                            d="M7.313.437,5.708,3.693l-3.592.524A.787.787,0,0,0,1.68,5.559l2.6,2.533-.615,3.578a.786.786,0,0,0,1.141.829l3.214-1.689L11.233,12.5a.787.787,0,0,0,1.141-.829l-.615-3.578,2.6-2.533a.787.787,0,0,0-.435-1.343L10.33,3.693,8.725.437a.788.788,0,0,0-1.411,0Z"
+                            transform="translate(-1.441 0.001)"
+                            fill="#f4c521"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="13.155"
+                          height="12.591"
+                          viewBox="0 0 13.155 12.591"
+                        >
+                          <path
+                            id="Icon_awesome-star"
+                            data-name="Icon awesome-star"
+                            d="M7.313.437,5.708,3.693l-3.592.524A.787.787,0,0,0,1.68,5.559l2.6,2.533-.615,3.578a.786.786,0,0,0,1.141.829l3.214-1.689L11.233,12.5a.787.787,0,0,0,1.141-.829l-.615-3.578,2.6-2.533a.787.787,0,0,0-.435-1.343L10.33,3.693,8.725.437a.788.788,0,0,0-1.411,0Z"
+                            transform="translate(-1.441 0.001)"
+                            fill="#f4c521"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="13.155"
+                          height="12.591"
+                          viewBox="0 0 13.155 12.591"
+                        >
+                          <path
+                            id="Icon_awesome-star"
+                            data-name="Icon awesome-star"
+                            d="M7.313.437,5.708,3.693l-3.592.524A.787.787,0,0,0,1.68,5.559l2.6,2.533-.615,3.578a.786.786,0,0,0,1.141.829l3.214-1.689L11.233,12.5a.787.787,0,0,0,1.141-.829l-.615-3.578,2.6-2.533a.787.787,0,0,0-.435-1.343L10.33,3.693,8.725.437a.788.788,0,0,0-1.411,0Z"
+                            transform="translate(-1.441 0.001)"
+                            fill="#f4c521"
+                          />
+                        </svg>
+
+                        <div class="code_img">
+                          <img src="assets/images/Group 36.png" alt="" />
+                        </div>
+                        <p>
+                          Lorem ipsum dolor sit amet, consetetur sadipscing
+                          elitr, sed diam nonumy eirmod tempor invidunt ut
+                          labore et dolore magna aliquyam erat, sed diam
+                          voluptua. At vero eos et accusam et justo duo dolores
+                          et ea rebum. Stet clita kasd gubergren, no sea
+                          takimata.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="slider_head">
+                        <p>REVIEWS</p>
+                        <h1>Klantervaringen</h1>
+                        <span class="underLine"></span>
+                      </div>
+                      <div class="man_details">
+                        <b>Bedrijfnaam</b>
+                        <h3>WILLEN JAN</h3>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="13.155"
+                          height="12.591"
+                          viewBox="0 0 13.155 12.591"
+                        >
+                          <path
+                            id="Icon_awesome-star"
+                            data-name="Icon awesome-star"
+                            d="M7.313.437,5.708,3.693l-3.592.524A.787.787,0,0,0,1.68,5.559l2.6,2.533-.615,3.578a.786.786,0,0,0,1.141.829l3.214-1.689L11.233,12.5a.787.787,0,0,0,1.141-.829l-.615-3.578,2.6-2.533a.787.787,0,0,0-.435-1.343L10.33,3.693,8.725.437a.788.788,0,0,0-1.411,0Z"
+                            transform="translate(-1.441 0.001)"
+                            fill="#f4c521"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="13.155"
+                          height="12.591"
+                          viewBox="0 0 13.155 12.591"
+                        >
+                          <path
+                            id="Icon_awesome-star"
+                            data-name="Icon awesome-star"
+                            d="M7.313.437,5.708,3.693l-3.592.524A.787.787,0,0,0,1.68,5.559l2.6,2.533-.615,3.578a.786.786,0,0,0,1.141.829l3.214-1.689L11.233,12.5a.787.787,0,0,0,1.141-.829l-.615-3.578,2.6-2.533a.787.787,0,0,0-.435-1.343L10.33,3.693,8.725.437a.788.788,0,0,0-1.411,0Z"
+                            transform="translate(-1.441 0.001)"
+                            fill="#f4c521"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="13.155"
+                          height="12.591"
+                          viewBox="0 0 13.155 12.591"
+                        >
+                          <path
+                            id="Icon_awesome-star"
+                            data-name="Icon awesome-star"
+                            d="M7.313.437,5.708,3.693l-3.592.524A.787.787,0,0,0,1.68,5.559l2.6,2.533-.615,3.578a.786.786,0,0,0,1.141.829l3.214-1.689L11.233,12.5a.787.787,0,0,0,1.141-.829l-.615-3.578,2.6-2.533a.787.787,0,0,0-.435-1.343L10.33,3.693,8.725.437a.788.788,0,0,0-1.411,0Z"
+                            transform="translate(-1.441 0.001)"
+                            fill="#f4c521"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="13.155"
+                          height="12.591"
+                          viewBox="0 0 13.155 12.591"
+                        >
+                          <path
+                            id="Icon_awesome-star"
+                            data-name="Icon awesome-star"
+                            d="M7.313.437,5.708,3.693l-3.592.524A.787.787,0,0,0,1.68,5.559l2.6,2.533-.615,3.578a.786.786,0,0,0,1.141.829l3.214-1.689L11.233,12.5a.787.787,0,0,0,1.141-.829l-.615-3.578,2.6-2.533a.787.787,0,0,0-.435-1.343L10.33,3.693,8.725.437a.788.788,0,0,0-1.411,0Z"
+                            transform="translate(-1.441 0.001)"
+                            fill="#f4c521"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="13.155"
+                          height="12.591"
+                          viewBox="0 0 13.155 12.591"
+                        >
+                          <path
+                            id="Icon_awesome-star"
+                            data-name="Icon awesome-star"
+                            d="M7.313.437,5.708,3.693l-3.592.524A.787.787,0,0,0,1.68,5.559l2.6,2.533-.615,3.578a.786.786,0,0,0,1.141.829l3.214-1.689L11.233,12.5a.787.787,0,0,0,1.141-.829l-.615-3.578,2.6-2.533a.787.787,0,0,0-.435-1.343L10.33,3.693,8.725.437a.788.788,0,0,0-1.411,0Z"
+                            transform="translate(-1.441 0.001)"
+                            fill="#f4c521"
+                          />
+                        </svg>
+
+                        <div class="code_img">
+                          <img src="assets/images/Group 36.png" alt="" />
+                        </div>
+                        <p>
+                          Lorem ipsum dolor sit amet, consetetur sadipscing
+                          elitr, sed diam nonumy eirmod tempor invidunt ut
+                          labore et dolore magna aliquyam erat, sed diam
+                          voluptua. At vero eos et accusam et justo duo dolores
+                          et ea rebum. Stet clita kasd gubergren, no sea
+                          takimata.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="slider_head">
+                        <p>REVIEWS</p>
+                        <h1>Klantervaringen</h1>
+                        <span class="underLine"></span>
+                      </div>
+                      <div class="man_details">
+                        <b>Bedrijfnaam</b>
+                        <h3>WILLEN JAN</h3>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="13.155"
+                          height="12.591"
+                          viewBox="0 0 13.155 12.591"
+                        >
+                          <path
+                            id="Icon_awesome-star"
+                            data-name="Icon awesome-star"
+                            d="M7.313.437,5.708,3.693l-3.592.524A.787.787,0,0,0,1.68,5.559l2.6,2.533-.615,3.578a.786.786,0,0,0,1.141.829l3.214-1.689L11.233,12.5a.787.787,0,0,0,1.141-.829l-.615-3.578,2.6-2.533a.787.787,0,0,0-.435-1.343L10.33,3.693,8.725.437a.788.788,0,0,0-1.411,0Z"
+                            transform="translate(-1.441 0.001)"
+                            fill="#f4c521"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="13.155"
+                          height="12.591"
+                          viewBox="0 0 13.155 12.591"
+                        >
+                          <path
+                            id="Icon_awesome-star"
+                            data-name="Icon awesome-star"
+                            d="M7.313.437,5.708,3.693l-3.592.524A.787.787,0,0,0,1.68,5.559l2.6,2.533-.615,3.578a.786.786,0,0,0,1.141.829l3.214-1.689L11.233,12.5a.787.787,0,0,0,1.141-.829l-.615-3.578,2.6-2.533a.787.787,0,0,0-.435-1.343L10.33,3.693,8.725.437a.788.788,0,0,0-1.411,0Z"
+                            transform="translate(-1.441 0.001)"
+                            fill="#f4c521"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="13.155"
+                          height="12.591"
+                          viewBox="0 0 13.155 12.591"
+                        >
+                          <path
+                            id="Icon_awesome-star"
+                            data-name="Icon awesome-star"
+                            d="M7.313.437,5.708,3.693l-3.592.524A.787.787,0,0,0,1.68,5.559l2.6,2.533-.615,3.578a.786.786,0,0,0,1.141.829l3.214-1.689L11.233,12.5a.787.787,0,0,0,1.141-.829l-.615-3.578,2.6-2.533a.787.787,0,0,0-.435-1.343L10.33,3.693,8.725.437a.788.788,0,0,0-1.411,0Z"
+                            transform="translate(-1.441 0.001)"
+                            fill="#f4c521"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="13.155"
+                          height="12.591"
+                          viewBox="0 0 13.155 12.591"
+                        >
+                          <path
+                            id="Icon_awesome-star"
+                            data-name="Icon awesome-star"
+                            d="M7.313.437,5.708,3.693l-3.592.524A.787.787,0,0,0,1.68,5.559l2.6,2.533-.615,3.578a.786.786,0,0,0,1.141.829l3.214-1.689L11.233,12.5a.787.787,0,0,0,1.141-.829l-.615-3.578,2.6-2.533a.787.787,0,0,0-.435-1.343L10.33,3.693,8.725.437a.788.788,0,0,0-1.411,0Z"
+                            transform="translate(-1.441 0.001)"
+                            fill="#f4c521"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="13.155"
+                          height="12.591"
+                          viewBox="0 0 13.155 12.591"
+                        >
+                          <path
+                            id="Icon_awesome-star"
+                            data-name="Icon awesome-star"
+                            d="M7.313.437,5.708,3.693l-3.592.524A.787.787,0,0,0,1.68,5.559l2.6,2.533-.615,3.578a.786.786,0,0,0,1.141.829l3.214-1.689L11.233,12.5a.787.787,0,0,0,1.141-.829l-.615-3.578,2.6-2.533a.787.787,0,0,0-.435-1.343L10.33,3.693,8.725.437a.788.788,0,0,0-1.411,0Z"
+                            transform="translate(-1.441 0.001)"
+                            fill="#f4c521"
+                          />
+                        </svg>
+
+                        <div class="code_img">
+                          <img src="assets/images/Group 36.png" alt="" />
+                        </div>
+                        <p>
+                          Lorem ipsum dolor sit amet, consetetur sadipscing
+                          elitr, sed diam nonumy eirmod tempor invidunt ut
+                          labore et dolore magna aliquyam erat, sed diam
+                          voluptua. At vero eos et accusam et justo duo dolores
+                          et ea rebum. Stet clita kasd gubergren, no sea
+                          takimata.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev"
+                    onclick="plusSlides(-1)"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                      style="color: black"
+                    ></span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next"
+                    onclick="plusSlides(1)"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                      style="color: black"
+                    ></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="slideshow-container">
+
+              <div class="mySlides fade">
+              </div>
+              <div class="mySlides fade">
+              </div>
+              <div class="mySlides fade"> 
+              </div>
+              <div class="mySlides fade"> 
+              </div>
+              
+             
+              <div class="Slider_images_sec">
+                
+                <div class="frist_image" class="dott" onclick="currenttSlide(1)">
+                  <img src="assets/images/Group 95.png" alt="" id="sliderImg" class="dot" onclick="currentSlide(1)"/>
+                </div>
+
+                <div class="second_image" class="dott" onclick="currenttSlide(2)">
+                  <img
+                    src="assets/images/Rectangle 23.png"
+                    alt=""
+                    id="sliderImg"
+                    class="dot" onclick="currentSlide(2)"
+                  />
+                </div>
+
+                <div class="third_image" class="dott" onclick="currenttSlide(3)">
+                  <img
+                    src="assets/images/Rectangle 26.png"
+                    alt=""
+                    id="sliderImg"
+                    class="dot" onclick="currentSlide(3)"
+                  />
+                </div>
+                
+                <div class="four_image" class="dott" onclick="currenttSlide(4)">
+                  <img
+                    src="assets/images/Rectangle 25.png"
+                    alt=""
+                    id="sliderImg"
+                    class="dot" onclick="currentSlide(4)"
+                  />
+                </div>
+              </div>
+              </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Review section end -->
+
+
+
+
+<!-- subscribe Section start -->
+<div class="container">
+<div class="main_subscribe_section">
+     <div class="row">
+       <div class="col-lg-8">
+         <div class="subscribe_content">
+           <h1>  MELD JE BEDRIJF AAN  </h1>
+           <h4>
+               ONTVAG SCHERPE PRIJZEN!
+           </h4>
+           <p>Heb jij binnekort onderhoud nodig?</p>
+         </div>
+       </div>
+       <div class="col-lg-4">
+         <div class="subscribe_input_sec">
+           <input type="text " placeholder="Name">
+           <input type="text " placeholder="Email">
+           <button>SUBSCRIBE</button>
+         </div>
+       </div>
+     </div>
+</div>
+</div>
+
+<!-- subscribe Section end -->
+
+
+
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+ 
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+
+
+
+
+    <!--All Js link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--Bootstrap CDN js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

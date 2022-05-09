@@ -1,0 +1,175 @@
+
+@media only screen and (max-width: 1991px) and (min-width: 1400px) {
+    .up_img{
+    
+        margin-left: 17%;
+    }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+    .up_img img{
+        width: 300px;
+    }
+    .undated_onvantgeen h1::before{
+        left: 467px;
+    }
+   .Slider_images_sec img{
+       width: 150px;
+       
+   }
+   .frist_image img{
+       margin-top: 50px;
+       margin-left: 150px;
+   }
+   .second_image img{
+       margin-left: 50px;
+   }
+   .third_image img{
+       margin-top: 240px;
+   }
+   .four_image img{
+    margin-left: 249px;
+    margin-top: 182px;
+   }
+   .carousel-control-next-icon{
+       left: -349px;
+   }
+}
+
+@media screen and (max-width:991px) and (min-width:592px) {
+    
+    .up_img img{
+        width: 200px;
+        height: 200px;
+    }
+    .undated_onvantgeen{
+        padding: -50px;
+    }
+    .undated_onvantgeen h1{
+        font-size: 20px;
+    }
+    .undated_onvantgeen h1::before{
+        left: 270px;
+        margin-left: 65px;       
+    }
+    .undated_onvantgeen input{
+        width: 200px;
+    }
+    .Slider_images_sec{
+        width: 100%;
+      
+        
+    }
+    .carousel-control-next-icon{
+        left: -550px;
+    }
+    .slider_Section{
+        height: 1200px;
+        padding: 50px 0px;
+        
+    }
+    .Slider_images_sec img{
+        width: 150px;
+        
+    }
+    .frist_image img{
+        margin-top: 50px;
+        margin-left: 150px;
+    }
+    .second_image img{
+        margin-left: 50px;
+    }
+    .third_image img{
+        margin-top: 240px;
+    }
+    .four_image img{
+     margin-left: 249px;
+     margin-top: 182px;
+    }
+}
+
+@media screen and (max-width:591px) and (min-width:50px) {
+    .up_img{
+    
+        display: none;
+    }
+    
+    .undated_onvantgeen{
+        padding: -50px;
+    }
+    .undated_onvantgeen h1{
+        font-size: 15px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .undated_onvantgeen h1::before{
+        left: 20px;  
+        width: 60px;     
+        height: 4px;
+    }
+    .undated_onvantgeen input{
+        width: 200px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .carousel-control-next-icon{
+        left: -269px;
+    }
+    .slider_Section{
+        height: 1000px;
+        padding: 50px 0px;
+        
+    }
+    .Slider_images_sec img{
+        width: 100px;
+        
+    }
+    .frist_image img{
+        margin-top: 50px;
+        margin-left: 150px;
+    }
+    .second_image img{
+        margin-left: 83px;
+        margin-top: 101px;
+    }
+    .third_image img{
+        margin-top: 176px;
+        margin-left: 135px;
+    }
+    .four_image img{
+     margin-left: 217px;
+     margin-top: 141px;
+    }
+    .slider_head h1{
+        font-size: 30px;
+    }
+    .main_subscribe_section h1{
+        font-size: 25px;
+    }
+}
+
+@media all and (max-width:991px) {
+   
+}
+
+@media all and (max-width:767px) {
+   
+}
+
+@media all and (max-width:577px) {
+   
+}
+
+@media all and (max-width:480px) {
+   
+}
+
+@media all and (max-width:400px) {
+   
+}
+
+@media all and (max-width:375px) {
+  
+}
+
+@media all and (max-width:320px) {}
