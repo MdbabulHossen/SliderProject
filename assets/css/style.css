@@ -219,6 +219,17 @@ body {
     
 }
 
+.frist_image img::after{
+    content: "";
+    background-color: red;
+    color: red;
+    width: 100px;
+    height: 10px;
+    position: absolute;
+    left: 500px;
+    top: 0px;
+    z-index: 2323232323;
+}
 .frist_image img{
  position: absolute;
  margin-left: 200px;
@@ -237,6 +248,37 @@ body {
     margin-top: 250px;
 }
 
+.frist_image span{
+    
+  
+    margin-left: 130px;
+    margin-top:310px;
+    position: absolute;
+    
+   
+}
+.second_image span{
+   
+    margin-left: 0px;
+    margin-top:420px;
+    position: absolute;
+   
+
+}
+.third_image span{
+  
+    margin-left: 0px;
+    margin-top:0px;
+    position: absolute;
+  
+
+}
+.four_image span{
+   
+    margin-left: 0px;
+    margin-top:0px;
+    position: absolute;
+}
 /* slider_Section_style end */
 
 
@@ -246,7 +288,8 @@ body {
     background-color: #006EFF;
     border-radius: 20px;
     padding:80px 50px;
-    margin-top: -70px;
+   margin-top: 200px;
+    position: absolute;
 
 }
 .main_subscribe_section h1{
@@ -285,3 +328,20 @@ body {
     color: white;
 }
 /* main_subscribe_section style end */
+
+
+
+
+
+.dot::after{
+    content: "";
+    background-color: red;
+    color: red;
+    width: 100px;
+    height: 10px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+
