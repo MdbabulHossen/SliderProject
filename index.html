@@ -35,65 +35,47 @@
 
     <!-- style for slider start -->
     <style>
-      * {box-sizing: border-box}
-     
-
-      /* The dots/bullets/indicators */
-      .dot {
-           filter: grayscale(100%);
+      * {
+        box-sizing: border-box;
       }
-      
-      .active{  
+
+      /* The dots */
+      .dot {
+        filter: grayscale(100%);
+      }
+
+      .active {
         filter: grayscale(0%);
         z-index: 343;
-       position: relative;
-
+        position: relative;
       }
-    
-      
+
       /* Fading animation */
       .fade {
         animation-name: fade;
         animation-duration: 1.5s;
       }
-      
+
       @keyframes fade {
-        from {opacity: .4} 
-        to {opacity: 1}
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
       }
-      
+
       /* On smaller screens, decrease text size */
       @media only screen and (max-width: 300px) {
-        .prev, .next,.text {font-size: 11px}
+        .prev,
+        .next,
+        .text {
+          font-size: 11px;
+        }
       }
+    </style>
 
-      .activeRed{
-        background-color: red;
-          color: red;
-          width: 200px;
-          height: 10px;
-          z-index: 1212121212;
-          margin-left: 0px;
-          margin-top:0px;
-          position: absolute;
-          
-      }
-      .activeRed::after{
-        content: "";
-        background-color: red;
-          color: red;
-          width: 200px;
-          height: 10px;
-          z-index: 1212121212;
-          margin-left: 0px;
-          margin-top:20px;
-          position: absolute;
-         
-      }
-      </style>
-
-      <!-- style for slider end -->
-
+    <!-- style for slider end -->
   </head>
 
   <body>
@@ -157,24 +139,17 @@
 
     <!-- review section start -->
 
-   <div class="main_updated_onvantgeen">
-     
-
-    
-    <div class="up_img">
-      <img src="assets/images/pexels-photo-5605061.png" alt="">
+    <div class="main_updated_onvantgeen">
+      <div class="up_img">
+        <img src="assets/images/pexels-photo-5605061.png" alt="" />
       </div>
 
       <div class="undated_onvantgeen">
-        <h1> UPDATES ONTVANGEN? MELD JE AAN! </h1>
-      <input type="text" name="text" placeholder="E-MAIL">
-      <button>AANMELDEN</button>
+        <h1>UPDATES ONTVANGEN? MELD JE AAN!</h1>
+        <input type="text" name="text" placeholder="E-MAIL" />
+        <button>AANMELDEN</button>
       </div>
-   
-   </div>
-
-
-
+    </div>
 
     <div class="slider_Section">
       <div class="container">
@@ -479,7 +454,6 @@
                     data-bs-target="#carouselExampleControls"
                     data-bs-slide="prev"
                     onclick="plusSlides(-1)"
-                   
                   >
                     <span
                       class="carousel-control-prev-icon"
@@ -494,7 +468,6 @@
                     data-bs-target="#carouselExampleControls"
                     data-bs-slide="next"
                     onclick="plusSlides(1)"
-                    
                   >
                     <span
                       class="carousel-control-next-icon"
@@ -508,43 +481,44 @@
             </div>
           </div>
           <div class="col-lg-6">
-
             <div class="slideshow-container">
+              <div class="mySlides fade"></div>
+              <div class="mySlides fade"></div>
+              <div class="mySlides fade"></div>
+              <div class="mySlides fade"></div>
 
-              <div class="mySlides fade">
-              </div>
-              <div class="mySlides fade">
-              </div>
-              <div class="mySlides fade"> 
-              </div>
-              <div class="mySlides fade"> 
-              </div>
-              
-              <div class="activeSlides fade">
-              </div>
-              <div class="activeSlides fade">
-              </div>
-              <div class="activeSlides fade"> 
-              </div>
-              <div class="activeSlides fade"> 
-              </div>
-              
-             
+              <div class="activeSlides fade"></div>
+              <div class="activeSlides fade"></div>
+              <div class="activeSlides fade"></div>
+              <div class="activeSlides fade"></div>
+
               <div class="Slider_images_sec">
-                
-                <div class="frist_image" >
-                  <img src="assets/images/Group 95.png" alt="" id="sliderImg" class="dot" onclick="currentSlide(1)"/>
-                 <span class="activeItem" onclick="currentSlide(1)"></span>
+                <div class="frist_image">
+                  <img
+                    src="assets/images/Group 95.png"
+                    alt=""
+                    id="sliderImg"
+                    class="dot"
+                    onclick="currentSlide(1)"
+                  />
+
+                  <div class="activeItem" onclick="currentSlide(1)">
+                    <img src="assets/images/Path 151.png" alt="" />
+                  </div>
                 </div>
 
-                <div class="second_image" >
+                <div class="second_image">
                   <img
                     src="assets/images/Rectangle 23.png"
                     alt=""
                     id="sliderImg"
-                    class="dot" onclick="currentSlide(2)"
+                    class="dot"
+                    onclick="currentSlide(2)"
                   />
-                  <span class="activeItem" onclick="currentSlide(2)"></span>
+
+                  <div class="activeItem" onclick="currentSlide(2)">
+                    <img src="assets/images/Path 151.png" alt="" />
+                  </div>
                 </div>
 
                 <div class="third_image">
@@ -552,24 +526,30 @@
                     src="assets/images/Rectangle 26.png"
                     alt=""
                     id="sliderImg"
-                    class="dot" onclick="currentSlide(3)"
+                    class="dot"
+                    onclick="currentSlide(3)"
                   />
-                  <span class="activeItem"  onclick="currentSlide(3)"></span>
+
+                  <div class="activeItem" onclick="currentSlide(3)">
+                    <img src="assets/images/Path 151.png" alt="" />
+                  </div>
                 </div>
-                
-                <div class="four_image" >
+
+                <div class="four_image">
                   <img
                     src="assets/images/Rectangle 25.png"
                     alt=""
                     id="sliderImg"
-                    class="dot" onclick="currentSlide(4)"
+                    class="dot"
+                    onclick="currentSlide(4)"
                   />
-                  <span class="activeItem" onclick="currentSlide(4)"></span>
+
+                  <div class="activeItem" onclick="currentSlide(4)">
+                    <img src="assets/images/Path 151.png" alt="" />
+                  </div>
                 </div>
               </div>
-              </div>
-
-            
+            </div>
           </div>
         </div>
       </div>
@@ -577,103 +557,90 @@
 
     <!-- Review section end -->
 
+    <!-- subscribe Section start -->
+    <div class="container">
+      <div class="main_subscribe_section">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="subscribe_content">
+              <h1>MELD JE BEDRIJF AAN</h1>
+              <h4>ONTVAG SCHERPE PRIJZEN!</h4>
+              <p>Heb jij binnekort onderhoud nodig?</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="subscribe_input_sec">
+              <input type="text " placeholder="Name" />
+              <input type="text " placeholder="Email" />
+              <button>SUBSCRIBE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- subscribe Section end -->
 
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
 
-<!-- subscribe Section start -->
-<div class="container">
-<div class="main_subscribe_section">
-     <div class="row">
-       <div class="col-lg-8">
-         <div class="subscribe_content">
-           <h1>  MELD JE BEDRIJF AAN  </h1>
-           <h4>
-               ONTVAG SCHERPE PRIJZEN!
-           </h4>
-           <p>Heb jij binnekort onderhoud nodig?</p>
-         </div>
-       </div>
-       <div class="col-lg-4">
-         <div class="subscribe_input_sec">
-           <input type="text " placeholder="Name">
-           <input type="text " placeholder="Email">
-           <button>SUBSCRIBE</button>
-         </div>
-       </div>
-     </div>
-</div>
-</div>
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
 
-<!-- subscribe Section end -->
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
 
+    <script>
+      let x = 1;
+      showSlidess(x);
 
+      function plusSlidess(n) {
+        showSlidess((x += n));
+      }
 
-
-<script>
-  let slideIndex = 1;
-  showSlides(slideIndex);
-  
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-  
- 
-  
-  function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-  }
-  </script>
-
-
-
-
-
-
-
-
-<script>
-  let x = 1;
-  showSlidess(x);
-  
-  function plusSlidess(n) {
-    showSlidess(x += n);
-  }
-  
- 
-  
-  function showSlidess(n) {
-    let i;
-    let activeSlides = document.getElementsByClassName("activeSlides");
-    let activeItem = document.getElementsByClassName("activeItem");
-    if (n > activeSlides.length) {x = 1}    
-    if (n < 1) {x = activeSlides.length}
-    for (i = 0; i < activeSlides.length; i++) {
-      activeSlides[i].style.display = "none";  
-    }
-    for (i = 0; i < activeItem.length; i++) {
-      activeItem[i].className = activeItem[i].className.replace(" activeRed", "");
-    }
-    activeSlides[x-1].style.display = "block";  
-    activeItem[x-1].className += " activeRed";
-  }
-  </script>
-
-
-
-
-
+      function showSlidess(n) {
+        let i;
+        let activeSlides = document.getElementsByClassName("activeSlides");
+        let activeItem = document.getElementsByClassName("activeItem");
+        if (n > activeSlides.length) {
+          x = 1;
+        }
+        if (n < 1) {
+          x = activeSlides.length;
+        }
+        for (i = 0; i < activeSlides.length; i++) {
+          activeSlides[i].style.display = "none";
+        }
+        for (i = 0; i < activeItem.length; i++) {
+          activeItem[i].className = activeItem[i].className.replace(
+            " activeRed",
+            ""
+          );
+        }
+        activeSlides[x - 1].style.display = "block";
+        activeItem[x - 1].className += " activeRed";
+      }
+    </script>
 
     <!--All Js link-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

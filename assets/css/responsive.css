@@ -10,9 +10,7 @@
     .up_img img{
         width: 300px;
     }
-    .undated_onvantgeen h1::before{
-        left: 467px;
-    }
+  
    .Slider_images_sec img{
        width: 150px;
        
@@ -34,6 +32,15 @@
    .carousel-control-next-icon{
        left: -349px;
    }
+    
+   .activeItem{
+       margin-top: 130px;
+       margin-left: -10px;
+   }
+   .activeItem img{
+       width: 50px;
+       
+   }
 }
 
 @media screen and (max-width:991px) and (min-width:592px) {
@@ -48,10 +55,7 @@
     .undated_onvantgeen h1{
         font-size: 20px;
     }
-    .undated_onvantgeen h1::before{
-        left: 270px;
-        margin-left: 65px;       
-    }
+   
     .undated_onvantgeen input{
         width: 200px;
     }
@@ -85,6 +89,15 @@
     .four_image img{
      margin-left: 249px;
      margin-top: 182px;
+    }
+
+    .activeItem{
+        margin-top: 130px;
+        margin-left: -10px;
+    }
+    .activeItem img{
+        width: 50px;
+        
     }
 }
 
@@ -145,6 +158,14 @@
     }
     .main_subscribe_section h1{
         font-size: 25px;
+    }
+    .activeItem{
+        margin-top:99px;
+        margin-left: -5px;
+    }
+    .activeItem img{
+        width: 20px;
+        
     }
 }
 
